@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حل امتحان التصفية للأوائل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💪 حل امتحان التصفية للأوائل 💡</h1>
+
+    <div id="questions-container"></div>
+
+    <div class="nav-buttons">
+      <button id="prev">⬅️ السابق</button>
+      <span id="progress-text">السؤال 1 من 30</span>
+      <button id="next">التالي ➡️</button>
+    </div>
+
+    <div id="encouragement" class="encouragement-text">ابدأ وبالتوفيق يا بطل! 🚀</div>
+
+    <div class="download-area">
+      <button onclick="showPasswordPopup()" class="pdf-button">📥 لو عايز تنزله pdf بس هيعوذ كلمة سر 😉 PDF</button>
+    </div>
+  </div>
+
+  <!-- نافذة كلمة السر الجديدة -->
+  <div id="password-popup" class="popup">
+    <div class="popup-content">
+      <p>أدخل كلمة السر لتحميل الملف:</p>
+      <input type="password" id="pdf-password" placeholder="•••••••">
+      <button onclick="checkPassword()">تحميل</button>
+      <button onclick="closePasswordPopup()">إلغاء</button>
+      <p id="error-message" class="error-message"></p>
+    </div>
+  </div>
+
+  <!-- تم انشاء الموقع -->
+  <footer>
+    <p>تم "إنشاء الموقع بواسطة 
+      <span class="highlight" onclick="window.open('https://web.facebook.com/MSANGAK27', '_blank')">محمد</span> و
+      <span class="highlight" onclick="window.open('https://web.facebook.com/profile.php?id=100051381292278', '_blank')">رياض</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

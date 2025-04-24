@@ -1,0 +1,163 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #999;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+#questions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#questions-container img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #ccc;
+  transition: transform 0.3s;
+}
+
+#questions-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #3498db;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.encouragement-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.download-area {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pdf-button {
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.pdf-button:hover {
+  background-color: #27ae60;
+}
+
+/* نافذة كلمة السر */
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #333;
+}
+
+.popup-content input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* حماية بسيطة من كليك يمين */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body img {
+  pointer-events: none;
+}
+
+/* تنسيق الفوتر */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+footer .highlight {
+  color: #e74c3c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer .highlight:hover {
+  color: #c0392b;
+}
